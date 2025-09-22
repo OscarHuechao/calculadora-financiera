@@ -1,0 +1,156 @@
+/* Logo pequeño y lúdico al costado */
+
+/* Logo centrado detrás del título */
+
+.logo-central {
+  position: absolute;
+  top: 50px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 260px;
+  height: 260px;
+  z-index: 1;
+  opacity: 0.10;
+  pointer-events: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.logo-central img {
+  width: 100%;
+  height: auto;
+  border-radius: 50%;
+  box-shadow: none;
+  filter: blur(0.5px) grayscale(30%);
+}
+body {
+  font-family: 'Segoe UI', sans-serif;
+  margin: 0;
+  padding: 20px;
+  min-height: 100vh;
+  background: linear-gradient(135deg, #e0f7fa 0%, #b2ebf2 40%, #a5d6a7 100%);
+}
+}
+
+.container {
+  max-width: 700px;
+  margin: auto;
+  background: white;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 0 15px rgba(0,0,0,0.1);
+  position: relative;
+  overflow: hidden;
+}
+
+.logo-lateral {
+  margin-left: 30px;
+  display: flex;
+  align-items: center;
+}
+.logo-lateral img {
+  max-width: 120px;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.12);
+}
+}
+
+/* Fondo ya definido arriba, se elimina el gradiente duplicado */
+
+@media (max-width: 500px) {
+  body {
+    flex-direction: column;
+    height: auto;
+  }
+
+  .contenedor {
+    box-shadow: none;
+    border-radius: 0;
+  }
+}
+
+.container {
+  max-width: 700px;
+  margin: auto;
+  background: white;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 0 15px rgba(0,0,0,0.1);
+}
+
+h1 {
+  text-align: center;
+  color: #2c3e50;
+  margin-bottom: 25px;
+  position: relative;
+  z-index: 2;
+  background: transparent;
+}
+
+label {
+  display: block;
+  margin-top: 15px;
+  font-weight: bold;
+}
+
+.input-group {
+  display: flex;
+  align-items: center;
+}
+
+.input-group input {
+  flex: 1;
+}
+
+.input-group span {
+  margin-left: 8px;
+  font-weight: bold;
+}
+
+input {
+  width: 100%;
+  padding: 10px;
+  margin-top: 5px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+}
+
+button {
+  margin-top: 25px;
+  width: 100%;
+  padding: 12px;
+  background-color: #00796b;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #004d40;
+}
+
+.resultado {
+  margin-top: 30px;
+  background: #f9fbe7;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 10px;
+}
+
+th, td {
+  border: 1px solid #cfd8dc;
+  padding: 10px;
+  text-align: left;
+}
+
+th {
+  background-color: #c8e6c9;
+}
