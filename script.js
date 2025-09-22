@@ -65,3 +65,12 @@ document.getElementById("creditForm").addEventListener("submit", function (e) {
 
   document.getElementById("resultado").innerHTML = resultadoHTML;
 });
+
+// Botón para limpiar datos
+document.getElementById("btnLimpiar").addEventListener("click", function () {
+  document.getElementById("valorParcela").value = "$ ";
+  document.getElementById("porcentajePie").value = "";
+  document.getElementById("cuotas").value = "";
+  document.getElementById("interesMensual").value = "";
+  document.getElementById("resultado").innerHTML = "";
+});
