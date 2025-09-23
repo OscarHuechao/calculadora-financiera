@@ -1,3 +1,24 @@
+/* Logo superior pequeño y responsivo */
+.logo-top {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 18px;
+  margin-bottom: 8px;
+}
+.logo-top img {
+  width: 130px;
+  height: auto;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.10);
+}
+@media (max-width: 600px) {
+  .logo-top img {
+    width: 56px;
+    border-radius: 8px;
+  }
+}
 /* Logo pequeño y lúdico al costado */
 
 /* Logo centrado detrás del título */
